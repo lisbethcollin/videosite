@@ -1,0 +1,104 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body {
+  background-image: url(img/leaves.webp);
+  background-color: #6d866b;
+}
+nav {
+  background-color: #25402ccc;
+  font-size: 16px;
+  height: 50px;
+  width: 100%;
+  font-family: futura-pt, sans-serif;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  display: block;
+  color: #f3f4f1;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #f3f4f1;
+  color: #25402c;
+}
+h1,
+h2,
+h3,
+p {
+  font-family: futura-pt, sans-serif;
+  text-align: center;
+  color: #25402c;
+}
+h1 {
+  font-size: 500%;
+}
+h2 {
+  font-size: medium;
+  margin-top: -1%;
+  text-decoration: underline;
+}
+h3 {
+  margin-top: -3%;
+}
+
+img {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 2%;
+  border-radius: 20px;
+  padding-bottom: 10px;
+}
+video {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+iframe {
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 16 / 9;
+  margin-top: 5%;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 800px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    margin-top: 3%;
+  }
+  .grid_1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  #img1 {
+    margin-left: 3%;
+  }
+  #img2 {
+    margin-right: 3%;
+  }
+}
